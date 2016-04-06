@@ -6,6 +6,7 @@ body {
 	padding: 0;
 }
 
+/* Front */
 .splash{
 	width: 100vw;
 	height: 100vh;
@@ -15,7 +16,26 @@ body {
     -o-background-size: cover;
     background-size: cover;
     text-align: center;
+    display: flex;
+    align-items: center;
+ 	justify-content: center;
 }
+	form#front-form>input[type="text"] {
+		border: 2px solid #4d4d4d;
+		font-size: 20px;
+		line-height: 42px;
+		background-color: rgba(255, 255, 255, 0.75);
+		min-width: 400px;
+		text-align: center;
+	}
+	form#front-form>input[type="submit"] {
+		background-color: #fff;
+		width: 200px;
+		font-size: 24px;
+		line-height: 42px;
+		border: none;
+	}
+
 
 .logo {
 	padding-top: 10vh;

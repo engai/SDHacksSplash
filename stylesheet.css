@@ -66,9 +66,12 @@ body {
 	.island {
 		top: 6vh;
 		z-index: -6;
-		left: -4vw; }
+		}
 		/*  TODO: Get rid of tree and boat for mobile 
 			Do we want to get rid of the island or just the tree? */
+		#palm-tree, .sand {
+			margin-left: -80px;
+		}
 		#palm-tree {
 			width: 66.2vh;
 			height: 68vh; }
@@ -140,6 +143,15 @@ body {
 		.sand {
 			height: 35vh;
 			top: 62vh; }
+		/* Tilt tree and sand for mobile */
+		@media screen and (max-width: 950px) {
+			.sand {
+				left: -30vh; }
+			#palm-tree {
+				left: -10vh;
+				transform: rotateZ(35deg); }
+
+		}
 	.sky {
 		height: 81vh;
 		width: 100%;
@@ -231,6 +243,9 @@ body {
 	height: 250px;
 }
 
+.splash-content {
+	padding: 20px;
+}
 .dates {
 	color: #4d4d4d;
 	font-size: 50px;

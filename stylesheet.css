@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300);
 
 body {
 	font-family: Source Sans Pro;
@@ -10,11 +10,6 @@ body {
 .splash{
 	width: 100vw;
 	height: 100vh;
-	background: url(images/background.png) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     text-align: center;
     display: flex;
     align-items: center;
@@ -57,6 +52,191 @@ body {
 	}
 
 
+
+/* Background for splash */
+.splash-bg {
+	background: url(assets/backgroundgradient.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow-y: hidden;
+	z-index: -10; }
+
+	.splash-bg * {
+		z-index: -1;
+		position: absolute; }
+	.island {
+		top: 6vh;
+		z-index: -6;
+		left: -4vw; }
+		/*  TODO: Get rid of tree and boat for mobile 
+			Do we want to get rid of the island or just the tree? */
+		#palm-tree {
+			width: 66.2vh;
+			height: 68vh;
+		}
+		#palm-tree>* {
+			z-index: -7;
+		}
+			/* Large palm tree dimensions: 2592 * 2660 */
+			/* Leaves ordered starting from 6 o'clock clockwise */
+			/*  W x H
+			/* Leaf1 -> 1188 x 963 */
+			.leaf#leaf1 {
+				top: 28%;
+				width: 45.8%;
+				height: 36.2%;
+				background: url(assets/PalmTree-06.png);
+				background-size: cover;
+			}
+			/* Leaf2 -> 1265 x 854 */
+			.leaf#leaf2 {
+				top: 6%;
+				width: 48.8%;
+				height: 32.1%;
+				background: url(assets/PalmTree-05.png);
+				background-size: cover;
+			}
+			/* Leaf3 -> 1188 x 963 */
+			.leaf#leaf3 {
+				left: 40%;
+				width: 45.8%;
+				height: 36.2%;
+				background: url(assets/PalmTree-04.png);
+				background-size: cover;
+			}
+			/* Leaf4 -> 1416 x 446 */
+			.leaf#leaf4 {
+				left: 45.5%;
+				top: 19%;
+				width: 54.6%;
+				height: 16.8%;
+				background: url(assets/PalmTree-03.png);
+				background-size: cover;
+			}
+			/* 237 x 237 */
+			.coconut#coconut1 {
+				left: 36%;
+				top: 33.6%;
+				width: 9.1%;
+				height: 9.1%;
+				background: url(assets/PalmTree-07.png);
+				background-size: cover;
+			}
+			/* 237 x 237 */
+			.coconut#coconut2 {
+				left: 44%;
+				top: 30%;
+				width: 9.1%;
+				height: 9.1%;
+				background: url(assets/PalmTree-02.png);
+				background-size: cover;
+			}
+			/* 651 x 1771 */
+			#palm-tree>#trunk {
+				top: 32%;
+				left: 34.5%;
+				width: 26%;
+				height: 68%;
+				background: url(assets/PalmTree-01.png);
+				background-size: cover;
+			}
+		.sand {
+			height: 35vh;
+			top: 62vh; }
+	.sky {
+		height: 81vh;
+		width: 100%;
+		z-index: -7;
+		top: 0; }
+		/* 1771 x 265 */
+		.sky>.cloud#cloud1 {
+			background: url(assets/Cloud-1.png) no-repeat;
+			background-size: cover;
+			height: 7vh;
+			width: 46.8vh;
+			top: 2vh;
+			left: 17vw; }
+		/* 1771 * 261 */
+		.sky>.cloud#cloud2 {
+			background: url(assets/Cloud-2.png) no-repeat;
+			background-size: cover;
+			height: 7vh;
+			width: 48vh;
+			top: 10vh;
+			right: 8vw; }
+		.sky>.bird#bird1 {
+			background: url(assets/bird1.png) no-repeat;
+			background-size: cover;
+			width: 24.9vh;
+			height: 3.9vh;
+			right: 10vw;
+			top: 25vh;
+		}
+		.sky>.bird#bird2 {
+			background: url(assets/bird2.png) no-repeat;
+			background-size: cover;
+			width: 24.1vh;
+			height: 7.2vh;
+			top: 36vh;
+			left: 20vw;
+		}
+	.ocean {
+		height: 22vh;
+		bottom: -3vh; }
+	.ocean>#boat {
+		z-index: -6;
+		position: absolute;
+		top: -24vh;
+		height: 23vh;
+		right: 18vw;
+		width: 12.3vh; }
+		#boat>#sail-left {
+			background: url(assets/Boat-02.png) no-repeat;
+			width: 80%;
+			left: 15%;
+			top: 2%;
+			height: 70%;
+			background-size: cover; }
+		#boat>#sail-right {
+			left: 105%;
+			top: 21%;
+		 	background: url(assets/Boat-03.png) no-repeat;
+		 	width: 58%;
+		 	height: 50%;
+		 	background-size: cover; }
+		#boat>#boat-body {
+			background: url(assets/Boat-04.png) no-repeat;
+			width: 180%;
+			height: 45%;
+			top: 67%;
+			background-size: cover; }
+	.ocean>.wave {
+			position: relative;
+			width: 100vw;
+			height: 6.25vh;
+			margin-top: -1.75vh; }
+		.wave#wave1 {
+			background: url(assets/Waves-02.png);
+		    background-size: auto 100%; }
+		.wave#wave2 {
+			background: url(assets/Waves-03.png);
+		    background-size: auto 100%; }
+		.wave#wave3 {
+			background: url(assets/Waves-01.png);
+		    background-size: auto 100%; }
+		.wave#wave4 {
+			background: url(assets/Waves-04.png);
+		    background-size: auto 100%; }
+		.wave#wave5 {
+			background: url(assets/Waves-05.png);
+		    background-size: auto 100%; }
 .logo {
 	height: 250px;
 }

@@ -13,45 +13,37 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
- 	justify-content: center;
-}
+ 	justify-content: center; }
+
+ 	/* Front form & button styling */
 	form#front-form>input {
 		color: #4d4d4d;
-		margin: 6px;
-	}
+		margin: 6px; }
 	form#front-form>input[type="text"] {
 		border: 2px solid;
 		font-size: 18px;
 		line-height: 30px;
 		padding: 8px;
 		background-color: rgba(255, 255, 255, 0.6);
-		min-width: 400px;
-	}
+		min-width: 400px; }
 	form#front-form>input::-webkit-input-placeholder {
 		color: #4d4d4d;
-		text-align: center;
-	}
+		text-align: center; }
 	form#front-form>input::-moz-placeholder {
 		color: #4d4d4d;
-		text-align: center;
-	}
+		text-align: center; }
 	form#front-form>input:-ms-input-placeholder {
 		color: #4d4d4d;
-		text-align: center;
-	}
+		text-align: center; }
 	form#front-form>input:-moz-placeholder {
 		color: #4d4d4d;
-		text-align: center;
-	}
+		text-align: center; }
 	form#front-form>input[type="submit"] {
 		background-color: #fff;
 		width: 200px;
 		font-size: 20px;
 		line-height: 42px;
-		border: none;
-	}
-
-
+		border: none; }
 
 /* Background for splash */
 .splash-bg {
@@ -79,11 +71,9 @@ body {
 			Do we want to get rid of the island or just the tree? */
 		#palm-tree {
 			width: 66.2vh;
-			height: 68vh;
-		}
+			height: 68vh; }
 		#palm-tree>* {
-			z-index: -7;
-		}
+			z-index: -7; }
 			/* Large palm tree dimensions: 2592 * 2660 */
 			/* Leaves ordered starting from 6 o'clock clockwise */
 			/*  W x H

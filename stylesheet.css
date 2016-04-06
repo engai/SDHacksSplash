@@ -9,18 +9,17 @@ body {
 .splash{
 	width: 100vw;
 	height: 100vh;
-	/*background: url(images/background.png) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
     text-align: center;
 }
 
-
 /* Background for splash */
 .splash-bg {
-	background: linear-gradient(rgb(3, 127, 158), #fff);
+	background: url(assets/backgroundgradient.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	/*margin-top: -10px;*/
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -30,25 +29,40 @@ body {
 	z-index: -10; }
 
 	.splash-bg * {
-		z-index: -5;
+		z-index: -1;
 		position: absolute; }
 	.island {
 		top: 6vh;
+		z-index: -6;
 		left: -4vw; }
-		/* Get rid of tree and boat for mobile */
+		/* TODO: Get rid of tree and boat for mobile */
 		.palm-tree {
 			height: 68vh; }
 		.sand {
 			height: 35vh;
 			top: 62vh; }
+	.sky {
+		height: 81vh;
+		width: 100%;
+		z-index: -7;
+		top: 0; }
+		.sky>.cloud#cloud1 {
+			background: url(assets/Cloud-1.png);
+			background-size: cover;
+			height: 56px;
+			width: 380px;
+			top: 2vh;
+			left: 29vh; }
+		.sky>.cloud#cloud2 {
+			background: url(assets/Cloud-2.png);
+			background-size: cover;
+			height: 56px;
+			width: 380px;
+			top: 12vh;
+			right: 10vh; }
 	.ocean {
 		height: 22vh;
 		bottom: -3vh; }
-	.ocean>.wave {
-		position: relative;
-		width: 100vw;
-		height: 6.25vh;
-		margin-top: -1.75vh; }
 	.ocean>#boat {
 		z-index: -6;
 		position: absolute;
@@ -74,21 +88,26 @@ body {
 			height: 60px;
 			top: 120px;
 			background-size: cover; }
-	.wave#wave1 {
-		background: url(assets/Waves-02.png);
-	    background-size: auto 100%; }
-	.wave#wave2 {
-		background: url(assets/Waves-03.png);
-	    background-size: auto 100%; }
-	.wave#wave3 {
-		background: url(assets/Waves-01.png);
-	    background-size: auto 100%; }
-	.wave#wave4 {
-		background: url(assets/Waves-04.png);
-	    background-size: auto 100%; }
-	.wave#wave5 {
-		background: url(assets/Waves-05.png);
-	    background-size: auto 100%; }
+	.ocean>.wave {
+			position: relative;
+			width: 100vw;
+			height: 6.25vh;
+			margin-top: -1.75vh; }
+		.wave#wave1 {
+			background: url(assets/Waves-02.png);
+		    background-size: auto 100%; }
+		.wave#wave2 {
+			background: url(assets/Waves-03.png);
+		    background-size: auto 100%; }
+		.wave#wave3 {
+			background: url(assets/Waves-01.png);
+		    background-size: auto 100%; }
+		.wave#wave4 {
+			background: url(assets/Waves-04.png);
+		    background-size: auto 100%; }
+		.wave#wave5 {
+			background: url(assets/Waves-05.png);
+		    background-size: auto 100%; }
 .logo {
 	padding-top: 10vh;
 	height: 250px;

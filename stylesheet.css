@@ -36,11 +36,7 @@ body {
 		left: -4vw; }
 		/*  TODO: Get rid of tree and boat for mobile 
 			Do we want to get rid of the island or just the tree? */
-		.palm-tree {
-			height: 68vh; }
-
 		#palm-tree {
-			/*left: 40vw;*/
 			width: 66.2vh;
 			height: 68vh;
 		}
@@ -118,23 +114,37 @@ body {
 		width: 100%;
 		z-index: -7;
 		top: 0; }
+		/* 1771 x 265 */
 		.sky>.cloud#cloud1 {
-			background: url(assets/Cloud-1.png);
+			background: url(assets/Cloud-1.png) no-repeat;
 			background-size: cover;
-			height: 56px;
-			width: 380px;
+			height: 7vh;
+			width: 46.8vh;
 			top: 2vh;
-			left: 29vh; }
+			left: 17vw; }
+		/* 1771 * 261 */
 		.sky>.cloud#cloud2 {
-			background: url(assets/Cloud-2.png);
+			background: url(assets/Cloud-2.png) no-repeat;
 			background-size: cover;
-			height: 56px;
-			width: 380px;
-			top: 12vh;
-			right: 10vh; }
+			height: 7vh;
+			width: 48vh;
+			top: 10vh;
+			right: 8vw; }
 		.sky>.bird#bird1 {
+			background: url(assets/bird1.png) no-repeat;
+			background-size: cover;
+			width: 24.9vh;
+			height: 3.9vh;
+			right: 10vw;
+			top: 25vh;
 		}
 		.sky>.bird#bird2 {
+			background: url(assets/bird2.png) no-repeat;
+			background-size: cover;
+			width: 24.1vh;
+			height: 7.2vh;
+			top: 36vh;
+			left: 20vw;
 		}
 	.ocean {
 		height: 22vh;
@@ -142,27 +152,29 @@ body {
 	.ocean>#boat {
 		z-index: -6;
 		position: absolute;
-		top: -180px;
+		top: -24vh;
+		height: 23vh;
 		right: 18vw;
-		width: 100px; }
+		width: 12.3vh; }
 		#boat>#sail-left {
-			background: url(assets/Boat-02.png);
-			width: 80px;
-			left: 15px;
-			height: 130px;
+			background: url(assets/Boat-02.png) no-repeat;
+			width: 80%;
+			left: 15%;
+			top: 2%;
+			height: 70%;
 			background-size: cover; }
 		#boat>#sail-right {
-			left: 105px;
-			top: 38px;
-		 	background: url(assets/Boat-03.png);
-		 	width: 55px;
-		 	height: 90px;
+			left: 105%;
+			top: 21%;
+		 	background: url(assets/Boat-03.png) no-repeat;
+		 	width: 58%;
+		 	height: 50%;
 		 	background-size: cover; }
 		#boat>#boat-body {
-			background: url(assets/Boat-04.png);
-			width: 180px;
-			height: 60px;
-			top: 120px;
+			background: url(assets/Boat-04.png) no-repeat;
+			width: 180%;
+			height: 45%;
+			top: 67%;
 			background-size: cover; }
 	.ocean>.wave {
 			position: relative;

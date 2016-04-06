@@ -26,29 +26,53 @@ body {
 	left: 0;
 	width: 100vw;
 	height: 100vh;
+	overflow-y: hidden;
 	z-index: -10;  }
 
 	.splash-bg * {
 		z-index: -5;
 		position: absolute;  }
 	.island {
-		top: 10vh;
-		left: 0;  }
+		top: 6vh;
+		left: -4vw;  }
 
+		/* Get rid of tree and boat for mobile */
 		.palm-tree {
-			height: 58vh;  }
+			height: 68vh;  }
 		.sand {
-			height: 33vh;
-			top: 56vh;  }
+			height: 35vh;
+			top: 62vh;  }
 
 	.waves {
+		height: 22vh;
+		bottom: -3vh;
 	}
 	.waves>.wave {
+		position: relative;
 		width: 100vw;
-		height: 3vw;
+		height: 6.25vh;
+		margin-top: -1.75vh;
 	}
-
-
+	.wave#wave1 {
+		background: url(assets/Waves-02.png);
+	    background-size: auto 100%;
+	}
+	.wave#wave2 {
+		background: url(assets/Waves-03.png);
+	    background-size: auto 100%;
+	}
+	.wave#wave3 {
+		background: url(assets/Waves-04.png);
+	    background-size: auto 100%;
+	}
+	.wave#wave4 {
+		background: url(assets/Waves-05.png);
+	    background-size: auto 100%;
+	}
+	.wave#wave5 {
+		background: url(assets/Waves-01.png);
+	    background-size: auto 100%;
+	}
 .logo {
 	padding-top: 10vh;
 	height: 250px;

@@ -9,13 +9,45 @@ body {
 .splash{
 	width: 100vw;
 	height: 100vh;
-	background: url(images/background.png) no-repeat center center fixed; 
+	/*background: url(images/background.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover;*/
     text-align: center;
 }
+
+
+/* Background for splash */
+.splash-bg {
+	background: linear-gradient(rgb(3, 127, 158), #fff);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -10;  }
+
+	.splash-bg * {
+		z-index: -5;
+		position: absolute;  }
+	.island {
+		top: 10vh;
+		left: 0;  }
+
+		.palm-tree {
+			height: 58vh;  }
+		.sand {
+			height: 33vh;
+			top: 56vh;  }
+
+	.waves {
+	}
+	.waves>.wave {
+		width: 100vw;
+		height: 3vw;
+	}
+
 
 .logo {
 	padding-top: 10vh;

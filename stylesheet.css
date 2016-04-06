@@ -19,7 +19,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	/*margin-top: -10px;*/
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -35,9 +34,40 @@ body {
 		top: 6vh;
 		z-index: -6;
 		left: -4vw; }
-		/* TODO: Get rid of tree and boat for mobile */
+		/*  TODO: Get rid of tree and boat for mobile 
+			Do we want to get rid of the island or just the tree? */
 		.palm-tree {
 			height: 68vh; }
+
+		#palm-tree {
+			height: 68vh;	
+		}
+			.leaf#leaf1 {
+				background: url(assets/PalmTree-06.png);
+
+			}
+			.leaf#leaf2 {
+				background: url(assets/PalmTree-05.png);
+
+			}
+			.leaf#leaf3 {
+				background: url(assets/PalmTree-04.png);
+			}
+			.leaf#leaf4 {
+				background: url(assets/PalmTree-03.png);
+			}
+			.coconut#coconut1 {
+
+			}
+			.coconut#coconut2 {
+				
+			}
+			#palm-tree>#trunk {
+				background: url(assets/PalmTree-01.png);
+			}
+
+
+
 		.sand {
 			height: 35vh;
 			top: 62vh; }
@@ -60,6 +90,10 @@ body {
 			width: 380px;
 			top: 12vh;
 			right: 10vh; }
+		.sky>.bird#bird1 {
+		}
+		.sky>.bird#bird2 {
+		}
 	.ocean {
 		height: 22vh;
 		bottom: -3vh; }

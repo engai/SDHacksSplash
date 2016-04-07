@@ -53,7 +53,7 @@ a {
 
 /* Background for splash */
 .splash-bg {
-	background: url(assets/backgroundgradient.png);
+	background: url(images/backgroundgradient.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300);
-@import url(https://fonts.googleapis.com/css?family=Sansita+One);
+@import url(https://fonts.googleapis.com/css?family=Sansita+One:400,200,300);
 
 body {
 	font-family: Source Sans Pro;
@@ -71,7 +71,7 @@ a {
 		position: absolute; }
 	.island {
 		top: 6vh;
-		z-index: -6;
+		z-index: -4;
 		}
 		/*  TODO: Get rid of tree and boat for mobile 
 			Do we want to get rid of the island or just the tree? */
@@ -147,8 +147,9 @@ a {
 				background-size: cover;
 			}
 		.sand {
+			z-index: 3;
 			height: 35vh;
-			top: 62vh; }
+			top: -10vh; }
 
 	.sky {
 		height: 81vh;
@@ -188,6 +189,7 @@ a {
 			left: 20vw;
 		}
 	.ocean {
+		z-index: -3;
 		height: 22vh;
 		bottom: -3vh; }
 	.ocean>#boat {
@@ -276,10 +278,20 @@ a {
 }
 .dates {
 	color: #4d4d4d;
-	/*color: #fff;*/
-	font-size: 42px;
-	font-weight: 300;
+	/*font-weight: 300;*/
 	margin: 10px 0 20px 0;
+}
+.dates {
+	font-weight: 200;
+}
+.dates>h1 {
+	font-size: 42px;
+	margin: 0;
+}
+.dates>h2 {
+	font-size: 32px;
+	margin: 5px;
+	display: inline-block;
 }
 
 .social {
@@ -373,10 +385,46 @@ a {
 	#palm-tree {
 		left: -10vh;
 		transform: rotateZ(35deg); }
-	.dates {
+	.dates>h1 {
 		font-size: 36px;
 	}
+	.sky>.cloud#cloud1 {
+		height: 5.25vh;
+		width: 35.1vh;
+	}
+	.sky>.cloud#cloud2 {
+		height: 5.25vh;
+		width: 36vh;
+	}
+	
 
 
-		 }
+}
+
+@media screen and (max-width: 600px) {
+	.splash-content {
+		margin-top: -5vh;
+	}
+	.logo {
+		height: 180px;
+	}	
+	.dates>h1 {
+		font-size: 32px;
+	}
+	.dates>h2 {
+		display: inline-block;
+		font-size: 24px;
+	}
+	.social {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 80%;
+		margin: 0 10% 10px 10%;
+	}
+	.tesc {
+		display: none;
+	}
+
+}
 

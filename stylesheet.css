@@ -181,12 +181,16 @@ body {
 		height: 22vh;
 		bottom: -3vh; }
 	.ocean>#boat {
-		z-index: -6;
+		z-index: 2;
 		position: absolute;
-		top: -24vh;
+		top: -20vh;
 		height: 23vh;
 		right: 18vw;
-		width: 12.3vh; }
+		width: 12.3vh; 
+	  -webkit-animation: boatBobbing 4s ease-in-out infinite; 
+		    -moz-animation: boatBobbing 4s ease-in-out infinite; /* Firefox 5-15 */
+        -o-animation: boatBobbing 4s ease-in-out infinite; /* Opera 12+ */
+        animation: boatBobbing 4s ease-in-out infinite; }
 		#boat>#sail-left {
 			background: url(assets/Boat-02.png) no-repeat;
 			width: 80%;
@@ -209,24 +213,50 @@ body {
 			background-size: cover; }
 	.ocean>.wave {
 			position: relative;
-			width: 100vw;
-			height: 6.25vh;
-			margin-top: -1.75vh; }
+			left: -2.5vw;
+			width: 105vw;
+			height: 8.25vh;
+			margin-top: -3.75vh; }
 		.wave#wave1 {
 			background: url(assets/Waves-02.png);
-		    background-size: auto 100%; }
+		    background-size: auto 100%;
+		    z-index: 1; 
+		  	-webkit-animation: waveAnimation 4s linear infinite; 
+		    -moz-animation: waveAnimation 4s linear infinite; /* Firefox 5-15 */
+        -o-animation: waveAnimation 4s linear infinite; /* Opera 12+ */
+        animation: waveAnimation 4s linear infinite;  }
 		.wave#wave2 {
 			background: url(assets/Waves-03.png);
-		    background-size: auto 100%; }
+		    background-size: auto 100%; 
+		    z-index: 3; 
+		    -webkit-animation: waveAnimation 3.7s linear infinite; 
+		    -moz-animation: waveAnimation 3.7s linear infinite; /* Firefox 5-15 */
+        -o-animation: waveAnimation 3.7s linear infinite; /* Opera 12+ */
+        animation: waveAnimation 3.7s linear infinite; }
 		.wave#wave3 {
 			background: url(assets/Waves-01.png);
-		    background-size: auto 100%; }
+		    background-size: auto 100%; 
+		    z-index: 3; 
+		    -webkit-animation: waveAnimation 3.57s linear infinite; 
+		    -moz-animation: waveAnimation 3.57s linear infinite; /* Firefox 5-15 */
+        -o-animation: waveAnimation 3.57s linear infinite; /* Opera 12+ */
+        animation: waveAnimation 3.57s linear infinite; }
 		.wave#wave4 {
 			background: url(assets/Waves-04.png);
-		    background-size: auto 100%; }
+		    background-size: auto 100%; 
+		    z-index: 3; 
+		    -webkit-animation: waveAnimation 3.45s linear infinite; 
+		    -moz-animation: waveAnimation 3.45s linear infinite; /* Firefox 5-15 */
+        -o-animation: waveAnimation 3.45s linear infinite; /* Opera 12+ */
+        animation: waveAnimation 3.45s linear infinite; }
 		.wave#wave5 {
 			background: url(assets/Waves-05.png);
-		    background-size: auto 100%; }
+		    background-size: auto 100%; 
+		    z-index: 3; 
+		    -webkit-animation: waveAnimation 3.33s linear infinite; 
+		    -moz-animation: waveAnimation 3.33s linear infinite; /* Firefox 5-15 */
+        -o-animation: waveAnimation 3.33s linear infinite; /* Opera 12+ */
+        animation: waveAnimation 3.33s linear infinite; }
 .logo {
 	height: 250px;
 }
@@ -255,4 +285,59 @@ body {
 	bottom: 0;
 	right: 0;
 	margin: 10px;
+}
+
+@-webkit-keyframes waveAnimation {
+    from { -webkit-transform: rotate(0deg) translateX(5px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
+
+@-moz-keyframes waveAnimation {
+    from { -moz-transform: rotate(0deg) translateX(5px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
+
+@-o-keyframes waveAnimation {
+    from { -o-transform: rotate(0deg) translateX(5px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
+
+@keyframes waveAnimation {
+    from { transform: rotate(0deg) translateX(5px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
+@-webkit-keyframes boatBobbing {
+    0% { top: -19vh;
+         -webkit-transform: rotate(-5deg); }
+    50%   { top: -21vh;
+            -webkit-transform: rotate(5deg); }
+    100% { top: -19vh;
+           -webkit-transform: rotate(-5deg);}
+}
+
+@-moz-keyframes boatBobbing {
+    0% { top: -19vh; 
+         -moz-transform: rotate(-5deg);}
+    50%   { top: -21vh; 
+            -moz-transform: rotate(5deg);}
+    100% { top: -19vh; 
+           -moz-transform: rotate(-5deg);}
+}
+
+@-o-keyframes boatBobbing {
+    0% { top: -19vh; 
+         -o-transform: rotate(-5deg); }
+    50%   { top: -21vh; 
+            -o-transform: rotate(5deg);}
+    100% { top: -19vh; 
+           -o-transform: rotate(-5deg); }
+}
+
+@keyframes boatBobbing {
+    0% { top: -19vh; 
+         transform: rotate(-5deg); }
+    50%   { top: -21vh; 
+            transform: rotate(5deg);}
+    100% { top: -19vh; 
+           transform: rotate(-5deg); }
 }

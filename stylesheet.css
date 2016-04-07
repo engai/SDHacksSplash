@@ -1,9 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300);
+@import url(https://fonts.googleapis.com/css?family=Sansita+One);
 
 body {
 	font-family: Source Sans Pro;
+	font-family: 'Sansita One';
+	color: white;
 	margin: 0;
 	padding: 0;
+}
+a {
+	color: inherit;
 }
 
 /* Front */
@@ -143,15 +149,7 @@ body {
 		.sand {
 			height: 35vh;
 			top: 62vh; }
-		/* Tilt tree and sand for mobile */
-		@media screen and (max-width: 950px) {
-			.sand {
-				left: -30vh; }
-			#palm-tree {
-				left: -10vh;
-				transform: rotateZ(35deg); }
 
-		}
 	.sky {
 		height: 81vh;
 		width: 100%;
@@ -248,7 +246,8 @@ body {
 }
 .dates {
 	color: #4d4d4d;
-	font-size: 50px;
+	/*color: #fff;*/
+	font-size: 42px;
 	font-weight: 300;
 	margin: 10px 0 20px 0;
 }
@@ -258,16 +257,46 @@ body {
 	bottom: 0;
 	left: 0;
 	margin: 10px;
-}
-
-.social img, .tesc img {
-	padding: 10px;
-	height: 40px;
-}
+	color: white; }
+	.social>.icon {
+		display: inline-block;
+		font-size: 48px;
+		line-height: 40px;
+		padding: 10px; }
+	.icon#icon-tw:hover {
+		color: #4099FF; /* Twitter blue */ }
+	.icon#icon-fb:hover {
+		color: #3B5998;	/* FB Blue */ }
+	.icon#icon-mail:hover {
+		color: #696969; }
+	.social img, .tesc img {
+		padding: 10px;
+		height: 40px; }
 
 .tesc {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	margin: 10px;
-}
+	margin: 10px; }
+
+
+/* Tilt tree and sand for mobile */
+@media screen and (max-width: 950px) {
+	.sand {
+		left: -30vh; }
+	#palm-tree {
+		left: -10vh;
+		transform: rotateZ(35deg); }
+	.dates {
+		font-size: 36px;
+	}
+
+
+		 }
+
+
+
+
+
+
+

@@ -5,11 +5,12 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link href="stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="splash-bg">
-		<div class="island">
+		<div class="island"><!-- TODO: separate the palm tree -->
 			<div id="palm-tree">
 				<div class="leaf" id="leaf1"></div>
 				<div class="leaf" id="leaf2"></div>
@@ -33,6 +34,7 @@
 				<div id="sail-right"></div>
 				<div id="boat-body"></div>
 			</div>
+
 			<div class="wave" id="wave1"></div>
 			<div class="wave" id="wave2"></div>
 			<div class="wave" id="wave3"></div>
@@ -42,31 +44,44 @@
 	</div>
 	<div class="splash">
 		<div class="splash-content">
-			<img src="images/logo.png" class="logo" />
+			<img src="images/logo1.png" class="logo" />
 			<div class="dates">
+
 				Sept. 30 - Oct. 2, 2016<br/>
 				Rimac Arena, UC San Diego
 			</div>
 
-			<div class="form">
-				<!-- Temporary placeholder form elems -->
-				<form id="front-form">
-					<input type="text" placeholder="Sign up for email updates!"><br>
-					<input type="submit" value="Subscribe">
-				</form>
-			</div>
-		</div>
+			<!-- Begin MailChimp Signup Form -->
+			<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+			<style type="text/css">
+				#mc_embed_signup{clear:left; font:14px Source Sans Pro; width:100%;}
+                /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+            <div id="mc_embed_signup">
+            	<form action="//sdhacks.us9.list-manage.com/subscribe/post?u=2b76757d9b200f72632d7330a&amp;id=c99e3caa24" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            		<div id="mc_embed_signup_scroll">
+            			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email@sdhacks.com" required>
+            			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2b76757d9b200f72632d7330a_c99e3caa24" tabindex="-1" value=""></div>
+            			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            		</div>
+            	</form>
+            </div>
 
-		<div class="social">
-			<img src="images/facebook-tan.png" />
-			<img src="images/twitter-tan.png" />
-			<img src="images/email-tan.png" />
-		</div>
+            <!--End mc_embed_signup-->
+        </div>
 
-		<div class="tesc">
-			<img src="images/tesc-tan.png" />
-		</div>
+        <div class="social">
+        	<a href="" class="icon" id="icon-fb"><i class="fa fa-facebook"></i></a>
+        	<a href="" class="icon" id="icon-tw"><i class="fa fa-twitter"></i></a>
+        	<a href="" class="icon" id="icon-mail"><i class="fa fa-envelope-o"></i></a>
+        </div>
 
-	</div>
+        <div class="tesc">
+        	<img src="images/tesc-white.png" />
+        </div>
+
+    </div>
 </body>
 </html>

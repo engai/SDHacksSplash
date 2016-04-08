@@ -204,13 +204,12 @@ a {
         -o-animation: boatBobbing 4s ease-in-out infinite; /* Opera 12+ */
         animation: boatBobbing 4s ease-in-out infinite; }
 		#boat>#sail-left {
-			background: url(assets/Boat-02.png) no-repeat;
-			width: 80%;
-			left: 15%;
-			top: 2%;
-			height: 70%;
-			background-size: cover; }
-		#boat>#sail-right {
+			background: url(assets/PirateShip.png) no-repeat;
+			width: 350%;
+			height: 200%;
+			top: -90%;
+			background-size: cover;}
+		/*#boat>#sail-right {
 			left: 105%;
 			top: 21%;
 		 	background: url(assets/Boat-03.png) no-repeat;
@@ -222,7 +221,7 @@ a {
 			width: 180%;
 			height: 45%;
 			top: 67%;
-			background-size: cover; }
+			background-size: cover; }*/
 	.ocean>.wave {
 			position: relative;
 			left: -2.5vw;
@@ -299,28 +298,26 @@ a {
 	bottom: 0;
 	left: 0;
 	margin: 10px;
-	color: white; }
-	.social>.icon {
-		display: inline-block;
-		font-size: 48px;
-		line-height: 40px;
-		padding: 10px; }
-	.icon#icon-tw:hover {
-		color: #4099FF; /* Twitter blue */ }
-	.icon#icon-fb:hover {
-		color: #3B5998;	/* FB Blue */ }
-	.icon#icon-mail:hover {
-		color: #696969; }
-	.social img, .tesc img {
-		padding: 10px;
-		height: 40px; }
-
-.tesc {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin: 10px;
+	color: white; 
 }
+.social>.icon {
+	display: inline-block;
+	font-size: 48px;
+	line-height: 40px;
+	padding: 10px; 
+}
+.icon#icon-tw:hover {
+color: #4099FF; /* Twitter blue */ }
+
+.icon#icon-fb:hover {
+color: #3B5998;	/* FB Blue */ }
+
+.icon#icon-mail:hover {
+	color: #696969; }
+
+.social img {
+	padding: 10px;
+	height: 40px; }
 
 @-webkit-keyframes waveAnimation {
     from { -webkit-transform: rotate(0deg) translateX(5px) rotate(0deg); }

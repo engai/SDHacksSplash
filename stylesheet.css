@@ -199,8 +199,9 @@ a {
 		height: 23vh;
 		right: 18vw;
 		width: 12.3vh; 
-	  -webkit-animation: boatBobbing 4s ease-in-out infinite; 
-		    -moz-animation: boatBobbing 4s ease-in-out infinite; /* Firefox 5-15 */
+		-webkit-transform-origin: 50% 100%; /* Chrome, Safari, Opera */
+		-webkit-animation: boatBobbing 4s ease-in-out infinite; 
+		-moz-animation: boatBobbing 4s ease-in-out infinite; /* Firefox 5-15 */
         -o-animation: boatBobbing 4s ease-in-out infinite; /* Opera 12+ */
         animation: boatBobbing 4s ease-in-out infinite; }
 		#boat>#sail-left {
@@ -209,19 +210,6 @@ a {
 			height: 200%;
 			top: -90%;
 			background-size: cover;}
-		/*#boat>#sail-right {
-			left: 105%;
-			top: 21%;
-		 	background: url(assets/Boat-03.png) no-repeat;
-		 	width: 58%;
-		 	height: 50%;
-		 	background-size: cover; }
-		#boat>#boat-body {
-			background: url(assets/Boat-04.png) no-repeat;
-			width: 180%;
-			height: 45%;
-			top: 67%;
-			background-size: cover; }*/
 	.ocean>.wave {
 			position: relative;
 			left: -2.5vw;
@@ -234,40 +222,40 @@ a {
 		    z-index: 1; 
 		  	-webkit-animation: waveAnimation 4s linear infinite; 
 		    -moz-animation: waveAnimation 4s linear infinite; /* Firefox 5-15 */
-        -o-animation: waveAnimation 4s linear infinite; /* Opera 12+ */
-        animation: waveAnimation 4s linear infinite;  }
+		    -o-animation: waveAnimation 4s linear infinite; /* Opera 12+ */
+		    animation: waveAnimation 4s linear infinite;  }
 		.wave#wave2 {
 			background: url(assets/Waves-03.png);
 		    background-size: auto 100%; 
 		    z-index: 3; 
 		    -webkit-animation: waveAnimation 3.7s linear infinite; 
 		    -moz-animation: waveAnimation 3.7s linear infinite; /* Firefox 5-15 */
-        -o-animation: waveAnimation 3.7s linear infinite; /* Opera 12+ */
-        animation: waveAnimation 3.7s linear infinite; }
+		    -o-animation: waveAnimation 3.7s linear infinite; /* Opera 12+ */
+		    animation: waveAnimation 3.7s linear infinite; }
 		.wave#wave3 {
 			background: url(assets/Waves-01.png);
 		    background-size: auto 100%; 
 		    z-index: 3; 
 		    -webkit-animation: waveAnimation 3.57s linear infinite; 
 		    -moz-animation: waveAnimation 3.57s linear infinite; /* Firefox 5-15 */
-        -o-animation: waveAnimation 3.57s linear infinite; /* Opera 12+ */
-        animation: waveAnimation 3.57s linear infinite; }
-		.wave#wave4 {
+		    -o-animation: waveAnimation 3.57s linear infinite; /* Opera 12+ */
+		    animation: waveAnimation 3.57s linear infinite; }
+	    .wave#wave4 {
 			background: url(assets/Waves-04.png);
 		    background-size: auto 100%; 
 		    z-index: 3; 
 		    -webkit-animation: waveAnimation 3.45s linear infinite; 
 		    -moz-animation: waveAnimation 3.45s linear infinite; /* Firefox 5-15 */
-        -o-animation: waveAnimation 3.45s linear infinite; /* Opera 12+ */
-        animation: waveAnimation 3.45s linear infinite; }
+		    -o-animation: waveAnimation 3.45s linear infinite; /* Opera 12+ */
+		    animation: waveAnimation 3.45s linear infinite; }
 		.wave#wave5 {
 			background: url(assets/Waves-05.png);
 		    background-size: auto 100%; 
 		    z-index: 3; 
 		    -webkit-animation: waveAnimation 3.33s linear infinite; 
 		    -moz-animation: waveAnimation 3.33s linear infinite; /* Firefox 5-15 */
-        -o-animation: waveAnimation 3.33s linear infinite; /* Opera 12+ */
-        animation: waveAnimation 3.33s linear infinite; }
+		    -o-animation: waveAnimation 3.33s linear infinite; /* Opera 12+ */
+		    animation: waveAnimation 3.33s linear infinite; }
 .logo {
 	height: 250px;
 }
@@ -339,41 +327,47 @@ color: #3B5998;	/* FB Blue */ }
     to   { transform: rotate(360deg) translateX(5px) rotate(-360deg); }
 }
 @-webkit-keyframes boatBobbing {
-    0% { top: -19vh;
-         -webkit-transform: rotate(-5deg); }
-    50%   { top: -21vh;
-            -webkit-transform: rotate(5deg); }
-    100% { top: -19vh;
-           -webkit-transform: rotate(-5deg);}
+    0% { 
+    	top: -18vh;
+        -webkit-transform: rotate(-5deg); }
+    50% { 
+    	top: -22vh;
+        -webkit-transform: rotate(5deg); }
+    100% { top: -18vh;
+        -webkit-transform: rotate(-5deg); }
 }
-
 @-moz-keyframes boatBobbing {
-    0% { top: -19vh; 
-         -moz-transform: rotate(-5deg);}
-    50%   { top: -21vh; 
-            -moz-transform: rotate(5deg);}
-    100% { top: -19vh; 
-           -moz-transform: rotate(-5deg);}
+    0% { 
+    	top: -18vh;
+        -moz-transform: rotate(-5deg); }
+    50% { 
+    	top: -22vh;
+        -moz-transform: rotate(5deg); }
+    100% { top: -18vh;
+        -moz-transform: rotate(-5deg); }
 }
 
 @-o-keyframes boatBobbing {
-    0% { top: -19vh; 
-         -o-transform: rotate(-5deg); }
-    50%   { top: -21vh; 
-            -o-transform: rotate(5deg);}
-    100% { top: -19vh; 
-           -o-transform: rotate(-5deg); }
+    0% { 
+    	top: -18vh;
+        -o-transform: rotate(-5deg); }
+    50% { 
+    	top: -22vh;
+        -o-transform: rotate(5deg); }
+    100% { top: -18vh;
+        -o-transform: rotate(-5deg); }
 }
 
 @keyframes boatBobbing {
-    0% { top: -19vh; 
-         transform: rotate(-5deg); }
-    50%   { top: -21vh; 
-            transform: rotate(5deg);}
-    100% { top: -19vh; 
-           transform: rotate(-5deg); }
+    0% { 
+    	top: -18vh;
+        transform: rotate(-5deg); }
+    50% { 
+    	top: -22vh;
+        transform: rotate(5deg); }
+    100% { top: -18vh;
+        transform: rotate(-5deg); }
 }
-
 
 /* Tilt tree and sand for mobile */
 @media screen and (max-width: 950px) {
@@ -383,45 +377,33 @@ color: #3B5998;	/* FB Blue */ }
 		left: -10vh;
 		transform: rotateZ(35deg); }
 	.dates>h1 {
-		font-size: 36px;
-	}
+		font-size: 36px; }
 	.sky>.cloud#cloud1 {
 		height: 5.25vh;
-		width: 35.1vh;
-	}
+		width: 35.1vh; }
 	.sky>.cloud#cloud2 {
 		height: 5.25vh;
-		width: 36vh;
-	}
-	
-
-
+		width: 36vh; }
 }
 
 @media screen and (max-width: 600px) {
 	.splash-content {
-		margin-top: -5vh;
-	}
+		margin-top: -5vh; }
 	.logo {
-		height: 180px;
-	}	
+		height: 180px; }	
 	.dates>h1 {
-		font-size: 32px;
-	}
+		font-size: 32px; }
 	.dates>h2 {
 		display: inline-block;
-		font-size: 24px;
-	}
+		font-size: 24px; }
 	.social {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		width: 80%;
-		margin: 0 10% 10px 10%;
-	}
+		margin: 0 10% 10px 10%; }
 	.tesc {
-		display: none;
-	}
+		display: none; }
 
 }
 

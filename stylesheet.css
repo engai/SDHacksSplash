@@ -12,6 +12,7 @@ a {
 	color: inherit;
 }
 
+
 /* Front */
 .splash{
 	width: 100vw;
@@ -92,24 +93,21 @@ a {
 				width: 45.8%;
 				height: 36.2%;
 				background: url(assets/PalmTree-06.png);
-				background-size: cover;
-			}
+				background-size: cover; }
 			/* Leaf2 -> 1265 x 854 */
 			.leaf#leaf2 {
 				top: 6%;
 				width: 48.8%;
 				height: 32.1%;
 				background: url(assets/PalmTree-05.png);
-				background-size: cover;
-			}
+				background-size: cover; }
 			/* Leaf3 -> 1188 x 963 */
 			.leaf#leaf3 {
 				left: 40%;
 				width: 45.8%;
 				height: 36.2%;
 				background: url(assets/PalmTree-04.png);
-				background-size: cover;
-			}
+				background-size: cover; }
 			/* Leaf4 -> 1416 x 446 */
 			.leaf#leaf4 {
 				left: 45.5%;
@@ -117,8 +115,7 @@ a {
 				width: 54.6%;
 				height: 16.8%;
 				background: url(assets/PalmTree-03.png);
-				background-size: cover;
-			}
+				background-size: cover; }
 			/* 237 x 237 */
 			.coconut#coconut1 {
 				left: 36%;
@@ -126,8 +123,7 @@ a {
 				width: 9.1%;
 				height: 9.1%;
 				background: url(assets/PalmTree-07.png);
-				background-size: cover;
-			}
+				background-size: cover; }
 			/* 237 x 237 */
 			.coconut#coconut2 {
 				left: 44%;
@@ -135,8 +131,7 @@ a {
 				width: 9.1%;
 				height: 9.1%;
 				background: url(assets/PalmTree-02.png);
-				background-size: cover;
-			}
+				background-size: cover; }
 			/* 651 x 1771 */
 			#palm-tree>#trunk {
 				top: 32%;
@@ -144,8 +139,7 @@ a {
 				width: 26%;
 				height: 68%;
 				background: url(assets/PalmTree-01.png);
-				background-size: cover;
-			}
+				background-size: cover; }
 		.sand {
 			z-index: 3;
 			height: 35vh;
@@ -178,16 +172,14 @@ a {
 			width: 24.9vh;
 			height: 3.9vh;
 			right: 10vw;
-			top: 25vh;
-		}
+			top: 25vh; }
 		.sky>.bird#bird2 {
 			background: url(assets/bird2.png) no-repeat;
 			background-size: cover;
 			width: 24.1vh;
 			height: 7.2vh;
 			top: 36vh;
-			left: 20vw;
-		}
+			left: 20vw; }
 	.ocean {
 		z-index: -3;
 		height: 22vh;
@@ -324,8 +316,7 @@ color: #3B5998;	/* FB Blue */ }
 
 @keyframes waveAnimation {
     from { transform: rotate(0deg) translateX(5px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(5px) rotate(-360deg); }
-}
+    to   { transform: rotate(360deg) translateX(5px) rotate(-360deg); } }
 @-webkit-keyframes boatBobbing {
     0% { 
     	top: -18vh;
@@ -333,9 +324,9 @@ color: #3B5998;	/* FB Blue */ }
     50% { 
     	top: -22vh;
         -webkit-transform: rotate(5deg); }
-    100% { top: -18vh;
-        -webkit-transform: rotate(-5deg); }
-}
+    100% { 
+    	top: -18vh;
+        -webkit-transform: rotate(-5deg); } }
 @-moz-keyframes boatBobbing {
     0% { 
     	top: -18vh;
@@ -343,10 +334,9 @@ color: #3B5998;	/* FB Blue */ }
     50% { 
     	top: -22vh;
         -moz-transform: rotate(5deg); }
-    100% { top: -18vh;
-        -moz-transform: rotate(-5deg); }
-}
-
+    100% { 
+    	top: -18vh;
+        -moz-transform: rotate(-5deg); } }
 @-o-keyframes boatBobbing {
     0% { 
     	top: -18vh;
@@ -354,9 +344,9 @@ color: #3B5998;	/* FB Blue */ }
     50% { 
     	top: -22vh;
         -o-transform: rotate(5deg); }
-    100% { top: -18vh;
-        -o-transform: rotate(-5deg); }
-}
+    100% { 
+    	top: -18vh;
+        -o-transform: rotate(-5deg); } }
 
 @keyframes boatBobbing {
     0% { 
@@ -365,9 +355,9 @@ color: #3B5998;	/* FB Blue */ }
     50% { 
     	top: -22vh;
         transform: rotate(5deg); }
-    100% { top: -18vh;
-        transform: rotate(-5deg); }
-}
+    100% { 
+    	top: -18vh;
+        transform: rotate(-5deg); } }
 
 /* Tilt tree and sand for mobile */
 @media screen and (max-width: 950px) {
@@ -383,8 +373,7 @@ color: #3B5998;	/* FB Blue */ }
 		width: 35.1vh; }
 	.sky>.cloud#cloud2 {
 		height: 5.25vh;
-		width: 36vh; }
-}
+		width: 36vh; } }
 
 @media screen and (max-width: 600px) {
 	.splash-content {
@@ -403,7 +392,5 @@ color: #3B5998;	/* FB Blue */ }
 		width: 80%;
 		margin: 0 10% 10px 10%; }
 	.tesc {
-		display: none; }
-
-}
+		display: none; } }
 
